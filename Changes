@@ -1,0 +1,25 @@
+Revision history for Perl module Monetra
+0.9.4 Mon Nov 12 10:34:00 2012
+    - Fix incompatibilies introduced in relation to calling M_Monitor
+      directly.
+0.9.3 Wed Jun 15 15:54:00 2011
+    - Remove dead waits via M_uwait().  Instead we should wait during
+      can_read() for the desired amount of sleep time.
+    - Fix M_CompleteAuthorizations(), it should only return number of
+      completed, not all in queue.
+    - Fix M_DeleteTrans() it was undefining the value rather than
+      deleting from the hash.
+
+0.9.2 Tue Aug 10 14:43:00 2010
+    - Attempt to be bug-compatible with old implementation. M_ResponseKeys()
+      previously return an array reference rather than the array itself,
+      change code to do the same in this native perl version.
+    - Same for M_CompleteAuthorizations()
+
+0.9.1 Fri Jun 18 16:48:01 2010
+    - CSV parser should use M_explode_quoted, greatly simplifies code
+
+0.9.0 Mon Mar 15 16:01:07 2010
+    - original version; created by ExtUtils::ModuleMaker 0.51
+
+
