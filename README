@@ -1,7 +1,1 @@
-LIBMONETRA PERL 0.9.4
-
-This is meant to be a drop-in replacement for the libmonetra C-based
-perl module.  This is implemented in pure perl adding cross-platform
-portability.
-
-Please report compatibility issues to support@monetra.com
+This library is deprecated and not recommeded any more. Pleaes use to the [Monetra ReST API](https://developers.monetra.com) for integration.
